@@ -1,13 +1,12 @@
 package Contas;
 
 
+public abstract class ContaBancaria implements SistemaContas {
 
-public abstract  class ContaBancaria implements SistemaContas{
-
-    private static  int SEQUENCIAL = 1;
-  protected   String nomeCliente;
-  protected int numConta;
-  protected   double saldo;
+    private static int SEQUENCIAL = 1;
+    protected String nomeCliente;
+    protected int numConta;
+    protected double saldo;
 
 
     public ContaBancaria() {
@@ -41,7 +40,7 @@ public abstract  class ContaBancaria implements SistemaContas{
     }
 
 
-    public void depositar(double depositar){
+    public void depositar(double depositar) {
         this.saldo = saldo + depositar;
 
     }
@@ -58,8 +57,6 @@ public abstract  class ContaBancaria implements SistemaContas{
         Contadestino.depositar(valor);
 
     }
-
-
 
 
 }

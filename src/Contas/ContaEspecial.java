@@ -1,11 +1,11 @@
 package Contas;
 
-public class ContaEspecial extends  ContaBancaria {
+public class ContaEspecial extends ContaBancaria {
 
     double limite;
 
     public double getLimite() {
-        return limite = limite ;
+        return limite = limite;
     }
 
     public void setLimite(double limite) {
@@ -13,20 +13,19 @@ public class ContaEspecial extends  ContaBancaria {
     }
 
     @Override
-    public void sacar(double sacar ) {
+    public void sacar(double sacar) {
         this.sacar(limite);
         sacar = limite;
-        }
-
+    }
 
 
     @Override
     public String toString() {
         return "== ContaEspecial== " +
-                ", nomeCliente='" +  nomeCliente + '\'' +
+                ", nomeCliente='" + nomeCliente + '\'' +
                 ", numConta=" + numConta +
                 " 'limite= " + limite +
                 ", saldo=" + saldo +
-                 "==";
+                "==";
     }
 }

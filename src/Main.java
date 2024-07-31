@@ -12,22 +12,17 @@ public class Main {
         cb.calcularNovoSaldo(10);
 
 
-
         ContaEspecial Es = new ContaEspecial();
         Es.setNomeCliente("Camila");
         Es.setNumConta(1928);
         Es.setSaldo(1000);
 
 
-
-
         System.out.println(Es);
         System.out.println(cb);
 
 
-
-      //  System.out.println( " Nome Cliente " + Es.getNomeCliente() + " Numero Conta  " + Es.getNumConta() + "  saldo " + Es.getSaldo() + " limite "+ Es.getLimite() + " saque " + Es.getSacar());
-
+        //  System.out.println( " Nome Cliente " + Es.getNomeCliente() + " Numero Conta  " + Es.getNumConta() + "  saldo " + Es.getSaldo() + " limite "+ Es.getLimite() + " saque " + Es.getSacar());
 
 
     }

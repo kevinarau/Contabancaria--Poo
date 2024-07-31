@@ -1,14 +1,12 @@
 package Contas;
 
-public class ContaPoupanca extends  ContaBancaria{
+public class ContaPoupanca extends ContaBancaria {
 
     double diaRendimento;
 
 
-
     public void calcularNovoSaldo(double diaRendimento) {
         this.diaRendimento = diaRendimento * saldo;
-
 
 
     }
