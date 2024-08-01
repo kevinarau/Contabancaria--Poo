@@ -3,16 +3,13 @@ package Contas;
 
 public abstract class ContaBancaria implements SistemaContas {
 
-    private static int SEQUENCIAL = 1;
+private static int   SENQUECIA = 0;
     protected String nomeCliente;
     protected int numConta;
     protected double saldo;
 
-
     public ContaBancaria() {
-        this.numConta = SEQUENCIAL++;
-
-
+        this.numConta =  SENQUECIA++;
     }
 
     public String getNomeCliente() {
@@ -46,15 +43,19 @@ public abstract class ContaBancaria implements SistemaContas {
     }
 
     @Override
-    public void sacar(double sacar ) {
-        this.saldo = saldo - sacar;
-
+    public  void sacar(double sacar) {
+        this.saldo =  saldo - sacar;
     }
 
     @Override
     public void tranferencia(double valor, SistemaContas destino) {
+        this.sacar(valor);
+        destino.depositar(valor);
 
     }
+
+
+    public abstract void sacar(double saldos, double limites);
 }
 
 

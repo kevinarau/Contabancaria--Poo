@@ -6,17 +6,18 @@ public class Main {
     public static void main(String[] args) {
 
         ContaPoupanca cb = new ContaPoupanca();
-        ContaBancaria esp = new ContaEspecial();
+
         cb.setNomeCliente("Kevin Araujo");
         cb.setSaldo(2000);
-        cb.tranferencia(100, esp );
-        cb.sacar(100);
+        cb.calcularNovoSaldo(6);
 
 
-        esp = new ContaEspecial();
+
+
+       ContaEspecial esp = new ContaEspecial();
         esp.setNomeCliente("Camila");
         esp.setSaldo(2000);
-        esp.sacar(200);
+        cb.tranferencia(500, esp);
 
 
         System.out.println(esp);
