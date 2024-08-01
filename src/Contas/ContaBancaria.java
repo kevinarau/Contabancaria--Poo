@@ -46,19 +46,15 @@ public abstract class ContaBancaria implements SistemaContas {
     }
 
     @Override
-    public void sacar(double sacar) {
+    public void sacar(double sacar ) {
         this.saldo = saldo - sacar;
 
     }
 
     @Override
-    public void tranferencia(double valor, SistemaContas Contadestino) {
-        this.sacar(valor);
-        Contadestino.depositar(valor);
+    public void tranferencia(double valor, SistemaContas destino) {
 
     }
-
-
 }
 
 

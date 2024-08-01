@@ -8,8 +8,15 @@ public class Main {
         ContaPoupanca cb = new ContaPoupanca();
         ContaBancaria esp = new ContaEspecial();
         cb.setNomeCliente("Kevin Araujo");
-        cb.depositar(100);
+        cb.setSaldo(2000);
         cb.tranferencia(100, esp );
+        cb.sacar(100);
+
+
+        esp = new ContaEspecial();
+        esp.setNomeCliente("Camila");
+        esp.setSaldo(2000);
+        esp.sacar(200);
 
 
         System.out.println(esp);
