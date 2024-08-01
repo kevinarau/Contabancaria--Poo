@@ -6,7 +6,9 @@ public interface SistemaContas {
 
     public void sacar(double sacar);
 
-    public void tranferencia(double valor, ContaBancaria destino);
+    public void tranferencia(double valor, SistemaContas destino);
+
+
 
 
 }

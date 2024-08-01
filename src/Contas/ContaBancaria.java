@@ -52,7 +52,7 @@ public abstract class ContaBancaria implements SistemaContas {
     }
 
     @Override
-    public void tranferencia(double valor, ContaBancaria Contadestino) {
+    public void tranferencia(double valor, SistemaContas Contadestino) {
         this.sacar(valor);
         Contadestino.depositar(valor);
 
